@@ -2,7 +2,7 @@ pipeline {
     agent any
 // #Performing mulitple stages for our application
     stages {
-        stage("pull") {
+        stage("Pull") {
                 steps {
                     echo "pull Done"
                 }
