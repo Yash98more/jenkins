@@ -12,6 +12,12 @@ pipeline {
                     echo "Build Done"
                 }
         }
+        stage("Test") {
+			steps {
+			    echo "Test Done"
+			}
+		}
+
         stage("Quality-Test") {
                 steps {
                     echo "Quality-check Done"
