@@ -1,32 +1,33 @@
+// # Pipeline is for understanding the syntax of declarative
 pipeline {
+    // # need to mention agent
     agent any
-// #Performing mulitple stages for our application
+// #Performing multiple stages for our application
     stages {
-        stage("Pull") {
-                steps {
-                    echo "Pull Done"
-                }
+        stage('Pull') {
+            steps {
+                echo 'Pull Done'
+            }
         }
-        stage("Build") {
-                steps {
-                    echo "Build Done"
-                }
+        stage('Build') {
+            steps {
+                echo 'Buld Done'
+            }
         }
-        stage("Test") {
-			steps {
-			    echo "Test Done"
-			}
-		}
-
-        stage("Quality-Test") {
-                steps {
-                    echo "Quality-check Done"
-                }
+        stage('Test') {
+            steps {
+                echo 'Test Done'
+            }
         }
-        stage("Deploy") {
-                steps {
-                    echo "Deploy Done"
-                }
+        stage('Qulaity-Test') {
+            steps {
+                echo 'Quality-Check Done'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploy Done'
+            }
         }
     }
 }
