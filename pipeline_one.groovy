@@ -1,6 +1,6 @@
 pipeline {
     agent any
-// Performing mulitple stages for our application
+// #Performing mulitple stages for our application
     stages {
         stage("pull") {
                 steps {
