@@ -4,21 +4,21 @@ pipeline {
     stages {
         stage("Pull") {
                 steps {
-                    echo "pull Done"
+                    echo "Pull Done"
                 }
         }
         stage("Build") {
-                step {
+                steps {
                     echo "Build Done"
                 }
         }
         stage("Quality-Test") {
-                step {
+                steps {
                     echo "Quality-check Done"
                 }
         }
         stage("Deploy") {
-                step {
+                steps {
                     echo "Deploy Done"
                 }
         }
