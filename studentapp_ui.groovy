@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage("Pull") {
                 steps {
-                    git changelog: false, poll: false, url: 'https://github.com/Yash98more/studentapp.ui'
+                    git branch: 'master', changelog: false, poll: false, url: 'https://github.com/Yash98more/studentapp.ui'
                     echo "yes, Application repository pull is done ! "
                 }
         }
@@ -25,6 +25,7 @@ pipeline {
                     echo "Quality-check Done"
                 }
         }
+
         stage("Deploy") {
                 steps {
                     echo "Deploy Done"
